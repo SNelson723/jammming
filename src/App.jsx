@@ -6,11 +6,11 @@ const App = () => {
   const [playlistName, setPlaylistName] = useState('New Playlist');
   const [playlistTracks, setPlaylistTracks] = useState([]);
 
-  
+
 
   return (
     <>
-      <h1></h1>
+
     </>
   )
 }
