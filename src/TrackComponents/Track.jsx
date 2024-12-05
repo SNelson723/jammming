@@ -1,5 +1,19 @@
-const Track = ({ track }) => {
-
+const Track = ({ track, isRemoval }) => {
+  const buttonRender = () => {
+    if (isRemoval) {
+      return (
+        <button className='trackAction' onClick={removeTrack}>
+          -
+        </button>
+      );
+    } else {
+      return (
+        <button className="trackAction" onClick={addTrack}>
+          +
+        </button>
+      );
+    }
+  };
   return (
     <>
       <div className="Track">
@@ -9,6 +23,7 @@ const Track = ({ track }) => {
             {track.artist} | {track.album}
           </p>
         </div>
+        {buttonRender()}
       </div>
     </>
   );
