@@ -1,4 +1,4 @@
-const Track = ({ track, isRemoval }) => {
+const Track = ({ track, isRemoval, removeTrack, addTrack }) => {
   const buttonRender = () => {
     if (isRemoval) {
       return (

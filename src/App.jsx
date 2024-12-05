@@ -18,6 +18,8 @@ const App = () => {
     setPlaylistTracks((prevTracks) => [...prevTracks, track]);
   };
 
+  const search = () => console.log('temp');
+  const savePlaylist = () => console.log('working on it');
   return (
     <>
       <div>
